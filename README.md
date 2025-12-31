@@ -31,15 +31,25 @@ The system validates user input in real time and prevents form submission until 
 ## Folder Structure
 
 frugal-registration-system/
+
 ├── frontend/
+
 │ ├── index.html
+
 │ ├── style.css
+
 │ └── script.js
+
 ├── automation/
+
 │ └── registration_test.py
+
 ├── screenshots/
+
 │ ├── error-state.png
+
 │ └── success-state.png
+
 └── README.md
 
 
