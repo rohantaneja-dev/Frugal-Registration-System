@@ -1,86 +1,80 @@
-# Intelligent Registration System – Frugal Testing Assignment
-
-## Project Overview
-This project is a simple and responsive Registration System developed as part of the Frugal Testing Software Engineer assignment. The application focuses on client-side validations, user-friendly feedback, and automated testing to ensure quality and reliability.
-
-The system validates user input in real time and prevents form submission until all required conditions are met. Automation testing is implemented to verify both negative and positive scenarios.
+# Intelligent Registration System  
+### Frugal Testing – Software Engineer Assignment
 
 ---
 
-## Features Implemented
-- User registration form with mandatory fields
-- Client-side validations with inline error messages
-- Submit button enabled only after valid inputs
-- Country → State → City dynamic dropdown logic
-- Clear success message on valid submission
-- Automated UI testing using Selenium WebDriver
-- Screenshot capture for test evidence
+## 📌 Project Overview
+The Intelligent Registration System is a client-side web application developed as part of the **Frugal Testing Software Engineer assignment**.  
+The primary objective of this project is to demonstrate **form validation, clean UI design, and basic test automation skills** aligned with real-world QA and frontend testing practices.
+
+The system validates user inputs in real time, prevents invalid submissions, and provides clear feedback to the user. Automated UI tests are implemented using Selenium WebDriver to verify both negative and positive scenarios.
 
 ---
 
-## Technology Stack
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- Python
-- Selenium WebDriver
-- webdriver-manager
+## 🚀 Key Features
+- User-friendly registration form with mandatory fields
+- Real-time client-side validations with inline error messages
+- Submit button enabled only when the form is valid
+- Country → State → City dependent dropdown logic
+- Clear success message on successful registration
+- Negative and positive test scenarios automated using Selenium
+- Screenshot capture for test execution evidence
 
 ---
 
-## Folder Structure
+## 🛠 Technology Stack
+- **HTML5** – Structure
+- **CSS3** – Styling & layout
+- **JavaScript (Vanilla)** – Client-side validation logic
+- **Python** – Automation scripting
+- **Selenium WebDriver** – UI automation
+- **webdriver-manager** – Driver management
+
+---
+
+## 📁 Project Folder Structure
+
 
 frugal-registration-system/
 
 ├── frontend/
 
-│ ├── index.html
+│ ├── index.html  # Registration form UI
 
-│ ├── style.css
+│ ├── style.css # Styling and layout
 
-│ └── script.js
+│ └── script.js # Client-side validations
 
 ├── automation/
 
-│ └── registration_test.py
+│ └── registration_test.py # Selenium automation script
 
 ├── screenshots/
 
-│ ├── error-state.png
+│ ├── negative-validation.png
 
-│ └── success-state.png
+│ └── successful-registration.png
 
 └── README.md
 
 
----
-
-## How to Run the Application
-1. Open the `frontend/index.html` file in any modern browser.
-2. Fill the form with invalid data to observe validations.
-3. Fill the form with valid data to see the success message.
 
 ---
 
-## Automation Testing Steps
-1. Navigate to the `automation` directory.
-2. Install dependencies:
-3. Run the automation script:
+## ▶️ How to Run the Application
+1. Open the `frontend/index.html` file in any modern web browser.
+2. Try submitting the form with missing or invalid data to observe validation messages.
+3. Fill all required fields with valid inputs to see the success message.
 
 ---
 
-## Automated Test Scenarios Covered
-### Negative Scenario
-- Missing mandatory field (Last Name)
-- Validation error displayed
-- Screenshot captured (`error-state.png`)
+## 🤖 Automation Testing
+### Prerequisites
+- Python installed
+- Google Chrome browser
 
-### Positive Scenario
-- All valid inputs provided
-- Successful registration message displayed
-- Screenshot captured (`success-state.png`)
-
----
-
-## Conclusion
-This project demonstrates a balanced approach to development and testing by combining clean UI design, strong validation logic, and reliable automation testing. The implementation aligns with real-world testing practices and ensures application quality before release.
+### Steps to Run Automation
+1. Navigate to the `automation` folder.
+2. Install required packages:
+   ```bash
+   pip install selenium webdriver-manager

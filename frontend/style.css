@@ -27,40 +27,71 @@ h2 {
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     font-weight: bold;
 }
 
-input, select {
+input,
+select,
+textarea {
     width: 100%;
-    padding: 8px;
+    padding: 9px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-input:focus, select:focus {
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
     outline: none;
     border-color: #007bff;
 }
 
-.gender-group input {
-    width: auto;
-    margin-right: 5px;
+/* Gender */
+.gender-group {
+    display: flex;
+    gap: 20px;
 }
 
-.checkbox-group {
+.radio-label {
     display: flex;
     align-items: center;
-}
-
-.checkbox-group label {
-    margin-left: 8px;
+    gap: 6px;
     font-weight: normal;
 }
 
+/* ✅ TERMS (REFERENCE STYLE) */
+.terms-container {
+    margin-top: 10px;
+}
+
+.terms-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #555;
+}
+
+.terms-text input {
+    width: auto;
+}
+
+.terms-highlight {
+    color: #1a73e8;
+    cursor: pointer;
+}
+
+/* Button */
 button {
     width: 100%;
-    padding: 10px;
+    padding: 11px;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -73,18 +104,64 @@ button:enabled {
     background-color: #28a745;
 }
 
+/* Errors */
 .error {
     color: red;
     font-size: 12px;
+    margin-top: 4px;
 }
 
-input.error-border, select.error-border {
+input.error-border,
+textarea.error-border,
+select.error-border {
     border-color: red;
 }
 
+/* Success */
 #successMessage {
     color: green;
     text-align: center;
     margin-top: 15px;
     font-weight: bold;
 }
+/* ---------- TOP ALERT ---------- */
+.alert {
+    display: none;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.alert.error {
+    display: block;
+    background-color: #fdecea;
+    color: #d32f2f;
+    border: 1px solid #f5c6cb;
+}
+
+.alert.success {
+    display: block;
+    background-color: #e6f4ea;
+    color: #2e7d32;
+    border: 1px solid #c3e6cb;
+}
+/* ---------- PASSWORD STRENGTH ---------- */
+.password-strength {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.strength-weak {
+    color: #d32f2f; /* red */
+}
+
+.strength-medium {
+    color: #f57c00; /* orange */
+}
+
+.strength-strong {
+    color: #2e7d32; /* green */
+}
+
